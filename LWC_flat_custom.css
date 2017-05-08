@@ -1,0 +1,590 @@
+@import "https://www.librarieswest.org.uk/client/css/vse/flat.css";
+
+
+ 
+/************************** BODY STYLES *******************/
+/* Insert the image for the background in the parentheses */
+body{
+background-color: #ffffff;
+}
+ 
+ 
+/*************************** HEADER AREA ******************************/
+
+/* Increase header height - default is 138px - this now controls the position of the content */
+
+.header, #ada_header {
+height: 160px;
+background-color: ;
+}
+
+
+/* Background color of header as well as the color "area" of the header - default height of header color 150px */
+.headerWrapper {
+background-color: #ffffff;
+height: ;
+}
+
+/* Placement of a banner -- you may need to lower a banner by 30px if it gets in the way of the ADA menu */
+.header_container, #ada_header .header_container {
+background-image: ;
+}
+
+/* menu links color property: color */
+
+/* menu container background color */
+
+
+.logo_container img {
+    margin-top: 15px;
+}
+
+
+.menuLink a, .menuLink a:visited, .menuLink a:active, .loginLink a, .menuActive a, #lpMainLink, #adaNav a, .ada_link, #languageSelector .pipeSeparator,  .pipeSeparator-light  {
+color: ;
+font-size:14px;
+font-weight:bold;
+}
+
+.menuLink a:hover, .loginLink a:hover, .menuActive a:hover, #lpMainLink:hover, #adaNav a:hover, .ada_link:hover, #languageSelector .pipeSeparator:hover,  .pipeSeparator-light:hover {
+color: ;	
+}
+
+.welcome {
+ color: #000000;
+ font-weight:bold;	
+font-style: normal;
+font-size:16px;
+}
+/*
+.ui-dialog .ui-dialog-titlebar {
+    background: #bae1a4 none repeat scroll 0 0 !important;
+}
+*/
+/* language option color property: color */
+
+.lpdropdown li a, .lpdropdown li a:visited, .lpdropdown li a:active {
+color: ;
+}
+.lpdropdown li a:hover, {
+color: ;
+
+}
+/* language dropdown list items */
+
+.lpdropdown .dropdownListItem a {
+color: ;
+}
+.lpdropdown .dropdownListItem a:hover {
+color: ;
+
+}
+/*
+#lists_main #listLoginLink {
+  background: #bae1a4 none repeat scroll 0 0;
+}
+
+#myListsHeader {
+  background: #bae1a4 none repeat scroll 0 0;
+}
+*/
+/* Change help and ADA icon color */
+.fa-question-circle::before, .fa-wheelchair::before {
+    color: ;
+}
+
+.fa-question-circle::before:hover, .fa-wheelchair::before:hover {
+    color: ;
+}
+
+/* ADA menu box background color */
+
+.ada_div_top {
+background-color: #000000;
+}
+
+#ada_header #mainMenuContainer {
+ /* background: #000000 none repeat scroll 0 0;*/
+margin-top: -5px;
+}
+
+
+.google_trans {
+    display: block;
+    margin-left: 1095px;
+    margin-top: -65px;
+}
+
+
+
+#libraryInfo {
+  width: 150px;
+}
+
+
+/************************** SEARCH BOX AREA **************************************/
+
+/* reposition search wrapper - default is 110px  */
+#searchBoxWrapper {
+top: ;
+background-color: #666666;
+}
+
+
+
+.quicksearchWrapper {
+height: auto;
+padding: 0;
+}
+
+
+/* change Home link color */
+.fa-home::before {
+    color: ;
+}
+/* Home icon is 0.7 opacity by default.  If you want the true color, set opacity to 1 */
+#searchBoxHomeLink {
+opacity: ;
+}
+
+/* Set color of search drop-down menus */
+
+#searchBox .dropDown {
+ background-color: ;
+ color: ;
+ border-color: ;
+} 
+#searchBox .dropDown:focus {
+ background-color:;
+ color: ;
+ border-color: ;
+}
+
+/* Set color of search box */
+
+#q {
+background-color: ;
+color: ;
+border-color: ;
+}
+
+#q:focus {
+background-color: ;
+color: ;
+border-color: ;
+}
+
+/* Advanced Search Link */
+
+#searchBoxAdvancedLink a {
+ font-size:11px;
+color: ;
+}
+#searchBoxAdvancedLink a:hover {
+ font-size:11px;
+color: ;
+}
+
+
+/* Search Button */
+
+#searchButton {
+ background-color: #00b834;
+ font-size:13px;
+ font-weight:bold; 
+}
+
+#searchButton:hover, #searchButton:focus {
+ background-color: #009a2b;
+ font-size:13px;
+}
+
+
+ 
+/* repositions the search suggestions drop-down, add enough pixels to fix if you increase the height of the search bar.
+
+#dropDown {
+	left: 496px !important;
+	top: 30px !important;
+}
+
+#dropDown, x:-moz-any-link, x:default {
+	left: 484px !important;
+	top: 32px !important;
+}
+*/
+
+
+/******************** CONTENT AREA ***************************************/
+
+
+/* Change pagination icon color */
+
+.fa-chevron-circle-left::before {
+    color:;
+}
+.fa-chevron-circle-right::before {
+    color:;
+}
+ /* 
+.nytimes_listbar {
+background: #bae1a4 none repeat scroll 0 0;
+}
+*/
+
+/* facet buttons */
+
+/*
+.facetTitleRow {
+    background: #bae1a4 none repeat scroll 0 0 !important;
+}
+
+.facetTitle {
+  color: #000000;
+  font-weight: bold;
+}
+
+.breadCrumbs .facetTitle {
+    background: #bae1a4 none repeat scroll 0 0 !important;
+}
+
+.ui-widget-header {
+  background: #bae1a4 none repeat scroll 0 0 !important;
+}
+
+.resultsToolbar_num_results {
+  background: #53b61d none repeat scroll 0 0 !important;
+}
+
+.requestHeader {
+  background: #bae1a4 none repeat scroll 0 0 !important;
+  color: #000000;
+}
+
+*/
+
+#formatTypeFacetDiv {
+  display: none;
+}
+
+
+.formatTypeIcon {
+  background: none;
+  padding-left: 0px;
+}
+
+
+/********************** ACCORDION COLOUR **********************************/
+
+/*
+.ui-accordion-icons .ui-accordion-header a {
+  background: #bae1a4 none repeat scroll 0 0 !important;
+  color: #000000 !important;
+  font-weight: bold;
+
+}
+*/
+
+/********************** GENERAL BUTTONS **********************************/
+
+
+
+
+/* facet buttons */
+/*
+.limitcolumn_wrapper .button {
+ background-color: #53b61d !important;
+ font-size:13px;
+color: ;
+}
+.limitcolumn_wrapper .button:hover {
+ background-color: #3a7f14;
+ font-size:13px;
+color:
+}
+*/
+
+
+/* login button */
+/*
+.loginButton {
+ background-color: #53b61d;
+ color: ;
+ font-size:13px;
+}
+
+.loginButton:hover {
+ background-color:#3a7f14;
+ color: ;
+ font-size:13px;
+}
+
+.displayDetailLink, .displayElementLabel, .availableLabel {
+  color: #000000 !important;
+}
+
+*/
+
+/*********************** FOOTER AREA ***************************************************/
+
+#footer {
+background-color: #666666;
+color: #ffffff;
+}
+/*
+#footer a {
+color: #53b61d;
+}
+*/
+
+
+
+/*********************** NEW STUFF ADDED BY DYLAN ***************************************************/
+/****************************************************************************************************/
+ 
+
+ 
+body {
+    font-size: 14px;
+}
+
+h2{
+font-size:16px;
+
+}
+
+.button{
+background:#306d9c;
+
+}
+
+
+.resultsToolbar_wrapper{
+padding-bottom: 35px;
+}
+
+ 
+.list .results_right .button {
+    font-size: 14px;
+	font-weight:bold;
+}
+ 
+ .limitcolumn_wrapper .button {
+     font-size: 13px;
+ }
+
+.detailActions .button{
+    font-size: 14px;
+	font-weight:bold;
+	height: 30px;
+}
+
+.detailItems{
+    font-size: 14px;
+}
+
+ /* HEADER AREA */
+ 
+ 
+ .pipeSeparator-light{
+ display:none;
+ }
+ 
+ 
+ /* for ADA mode */
+ 
+ /*
+#ada_header {
+ height:200px;
+}
+
+
+#adaNav{
+padding-top:0px;
+padding-bottom:0px;
+}
+*/
+#adaModeDiv{
+display:none;
+}
+
+
+/* Library info box */
+#libraryInfo {
+    width: 180px;
+	background-color: #e6e6e6;
+}
+
+/* Shift Google translate widget to the left a bit so it doesn't go off the screen */
+.google_trans{
+margin-left: 850px;
+
+}
+
+
+.content_container {
+color: #000000;
+}
+
+ 
+
+.logo_container img {
+    margin-top: 0px;
+}
+
+ 
+ 
+/* FOOTER AREA */ 
+ #footer {
+/*height:220px;*/
+height:450px;
+bottom:-450px;
+/*background-image: url("footer.png");*/
+/*background-repeat: no-repeat;*/
+/*background-position: center;*/
+text-align:center;
+}
+
+#copyright {
+    padding: 50px;
+}
+
+.holdsTable{
+    height: 150%;
+    /*background-image:url(/custom/web/hold_warning_table.png); */
+    background-repeat:no-repeat; 
+    background-position: bottom left;
+}
+
+
+/* Remove "buy it now" button, but only from book river on home page */
+
+.bookRiver .amazonButton {
+    margin-right: 0px;
+	display:none;
+}
+
+.bookRiver{
+padding-top:16px;
+}
+
+
+#registration_link{
+   display:none;
+}
+
+/* Blocks for links on left and right columns */
+
+#lw_block{
+width: 190px;
+background-color: #e6e6e6;
+padding:10px;
+border-bottom: 5px solid #666666;
+}
+
+#lw_block a {
+color:#000000;
+}
+
+#lw_block a:hover {
+text-decoration:none;
+}
+
+.patron_help{
+display:none;
+}
+
+#mainMenuContainer {
+background-color: #ffffff;
+color:#000000;
+}
+
+#mainMenuContainer  a{
+color: #000000;
+font-size:15px;
+}
+
+#ada_header #mainMenuContainer{
+background:#ffffff;
+}
+
+#ada_header .menuActive a {
+color:#000000;
+}
+
+.content{
+padding:0px;
+}
+
+#view_all_facets_div {
+overflow: scroll;
+}
+
+ul, ol {
+list-style-position:outside;
+}
+
+/* For central content use indented ul/ol */
+div.pct75 span div.content_container div.content ul, div.pct75 span div.content_container div.content ol {
+    margin-left: 25px;
+}
+
+#searchBox .dropDown{
+color:#000000;
+font-weight:bold;
+}
+
+.ui-tabs .ui-tabs-nav{
+color:#000000;
+font-weight:bold;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited{
+color:#000000;
+font-weight:bold;
+}
+
+
+.ui-accordion-icons .ui-accordion-header a{
+color:#000000;
+font-weight:bold;
+font-size:16px;
+}
+
+h3.ui-accordion-header, h3.ui-accordion-header a{
+color:#000000;
+font-weight:bold;
+font-size:16px;
+}
+
+#checkoutsDetail .button, .HoldsDetail .button{
+font-size:20px;
+}
+
+.checkoutsSelectText{
+font-size:14px;
+}
+
+.checkoutsList th{
+font-size:16px;
+}
+
+.checkoutsDueDate{
+font-size:14px;
+}
+
+.checkoutsRenewCount{
+font-size:14px;
+}
+
+.payFinesTable th{
+font-size:16px;
+}
+
+#searchViewDISCOVERY_ALL .no_image_text {
+    font-size: 12px !important;
+}
+
+#smsOption_MANUAL_MESSAGES, #smsOption_GENERAL_ANNOUNCEMENTS, #smsOption_BILL_NOTICES {
+    display: none !important;
+}
