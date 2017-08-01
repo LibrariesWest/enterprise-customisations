@@ -1,9 +1,9 @@
 function changeWelcomeMessage () {
     var welcomeText = jQuery('.welcome').text();
-    var removeWelcome = welcomeText.split("Welcome")[1];
-    var userNameText = removeWelcome.split(",");
-    var newUserNameText = userNameText[1]+userNameText[0];
-    var newWelcomeText = 'Welcome '+newUserNameText;
+    var removeWelcome = welcomeText.split('Welcome')[1];
+    var userNameText = removeWelcome.split(',');
+    var newUserNameText = userNameText[1] + userNameText[0];
+    var newWelcomeText = 'Welcome ' + newUserNameText;
     jQuery('.welcome').text(newWelcomeText);
 }
 
