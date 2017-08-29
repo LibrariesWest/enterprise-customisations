@@ -61,8 +61,8 @@ function waitToDoSomething(){
 
 function secureMarketline () {
 	$J('.room_links a[href*="rm=MARKETLINE+ADV"]').click(function(){
-	com_sirsi_ent_login.loginFirst(allowMe);
-	return false;  
+        com_sirsi_ent_login.loginFirst(allowMe);
+        return false;  
 	});
 }
 
@@ -81,7 +81,7 @@ function addMarketlineLink () {
 }
 
 function editHoldTableWithCost(){
-    if ($J('#holdTable select.pickupSelect') && $J('#holdTable select.pickupSelect').length > 0) {
+    if ($J('#holdTable .pickupSelect') && $J('#holdTable .pickupSelect').length > 0) {
         var prices = {
             "Unknown": "Unknown",
             "BN": "Free",
@@ -92,7 +92,7 @@ function editHoldTableWithCost(){
             "SO": "£1 except requests placed by children on children's books (free), requests placed by children on items other than children's books (50p)",
             "SG": "£1.10 except requests made by concessionary users on books & audio books (50p) and CDs and computer games (free), and requests made by children & young adults (free)."
         };
-        var selectedholdlibrary = $J('#holdTable select.pickupSelect').val();
+        var selectedholdlibrary = $J('#holdTable .pickupSelect').val();
         $J('#holdTable tbody tr.customPriceDisplay').remove();
         $J('#holdTable tbody').append('<tr class="customPriceDisplay"><td colspan="2" class="align: right">Hold charges may apply.  Estimated cost: ' + prices[(selectedholdlibrary.substring(0, 2) || "Unknown")] + '</td></tr>')
     }
@@ -111,7 +111,9 @@ function modifyBookRiverLink(){
             buttons.val('More Details');
             clearInterval(updateRiverButton);
             jQuery('.nytimes_select').change(function(e){
-                modifyBookRiverLink();
+                setTimeout(function () {
+                    modifyBookRiverLink();
+                }, 500);
             });
         }
         if (updateRiverButtonIterations > 20) clearInterval(updateRiverButton);
@@ -125,10 +127,10 @@ function modifyEverythingSearchLimitText(){
 $J(document).ready(function(){
     addMarketlineLink();
     waitToDoSomething();
-    setCatalogueSearchPlaceholder();
     modifyBookRiverLink();
     modifyEverythingSearchLimitText();
-    //$J('#holdTable select.pickupSelect').change(function(e){
-        //editHoldTableWithCost();
-    //});
+    setCatalogueSearchPlaceholder();
+    $J('#holdTable select.pickupSelect').change(function(e){
+        editHoldTableWithCost();
+    });
 });
