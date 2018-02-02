@@ -18,8 +18,13 @@
         id: 'light_all',
     }).addTo(librarymap);
 
-    var clickLibrary = function (e) {
-        alert(e);
+    var clickLibrary = function (library, e) {
+        $('#library').empty();
+        $('#library').append(
+            '<h4>' + library.properties.name + '</h4>' +
+            '<p class="small">A ' + library.properties.authority + ' at ' + library.properties.location + ' library</p>' +
+            '<p>Further library details here including opening hours, image, and address.</p>'
+        );
     };
 
     var libraries = null, librariesdt = [];
@@ -47,7 +52,7 @@
                     });
                 },
                 onEachFeature: function (feature, layer) {
-                    layer.on('click', clickLibrary);
+                    layer.on('click', clickLibrary.bind(this, feature));
                 }
             });
             libraries.addTo(librarymap);
@@ -59,8 +64,18 @@
                     { title: 'Authority' },
                     { title: 'Address' },
                     { title: 'Postcode' },
-                    { title: 'Email' },
-                    { title: 'Website' },
+                    {
+                        title: 'Email',
+                        render: function (data, type, row) {
+                            return '<a href="mailto:' + data + '" target="_blank">Email</a>';
+                        },
+                    },
+                    {
+                        title: 'Website',
+                        render: function (data, type, row) {
+                            return '<a href="' + data + '" target="_blank">Website</a>';
+                        },
+                    },
                     { title: 'Distance' }
                 ]
             });
@@ -70,12 +85,12 @@
         console.log(err);
         });
 
-
     // Find nearest
     $('#btn-search').on('click', function () {
-
+        // Get postcode lookup
+        $.getJSON('https://api.postcodes.io/postcodes/' + $('#txt-search').val(), function (data) {
+            // data.results
+            alert(data);
+        });
     });
-
-
-
 });
